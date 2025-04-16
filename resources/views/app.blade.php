@@ -35,11 +35,53 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/vendors/css/vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/vendors/css/charts/apexcharts.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/vendors/css/extensions/toastr.min.css">
+        <!-- END: Vendor CSS-->
+    
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/colors.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/components.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/themes/dark-layout.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/themes/bordered-layout.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/themes/semi-dark-layout.css">
+    
+        <!-- BEGIN: Page CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/core/menu/menu-types/vertical-menu.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/pages/dashboard-ecommerce.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets') }}/css/plugins/extensions/ext-component-toastr.css">
+        <!-- END: Page CSS-->
+    
+        <!-- BEGIN: Custom CSS-->
+        {{-- <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css"> --}}
+
         @routes
         @vite(['resources/js/app.ts'])
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        <!-- BEGIN: Vendor JS-->
+        <script src="{{ asset('app-assets') }}/vendors/js/vendors.min.js"></script>
+        <!-- BEGIN Vendor JS-->
+
+        <!-- BEGIN: Page Vendor JS-->
+        <script src="{{ asset('app-assets') }}/vendors/js/extensions/toastr.min.js"></script>
+        <!-- END: Page Vendor JS-->
+
+        <!-- BEGIN: Theme JS-->
+        <script src="{{ asset('app-assets') }}/js/core/app-menu.js"></script>
+        <script src="{{ asset('app-assets') }}/js/core/app.js"></script>
+        <!-- END: Theme JS-->
+
+        <!-- BEGIN: Page JS-->
+        {{-- <script src="{{ asset('app-assets') }}/js/scripts/pages/dashboard-ecommerce.js"></script> --}}
     </body>
 </html>
