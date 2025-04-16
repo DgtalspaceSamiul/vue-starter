@@ -38,15 +38,12 @@ import { Link } from '@inertiajs/vue3';
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning badge-pill ml-auto mr-1">2</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="dashboard-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
-                        </li>
-                        <li class="active"><a class="d-flex align-items-center" href="dashboard-ecommerce.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">eCommerce</span></a>
-                        </li>
-                    </ul>
+                
+                <li class=" nav-item"><Link class="d-flex align-items-center" :href="route('dashboard')"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">
+                    Dashboard
+                </span></Link>
                 </li>
-                <li class=" navigation-header"><span data-i18n="Apps & Pages">Apps &amp; Pages</span><i data-feather="more-horizontal"></i>
+                <li class=" navigation-header"><span data-i18n="Apps & Pages">Apps & Pages</span><i data-feather="more-horizontal"></i>
                 </li>
                 <li class=" nav-item"><Link class="d-flex align-items-center" :href="route('todo')"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">
                     Todo
@@ -56,10 +53,7 @@ import { Link } from '@inertiajs/vue3';
                 </li>
                 <li class=" nav-item"><Link class="d-flex align-items-center" :href="route('email')"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Email</span></Link>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Calendar</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Kanban</span></a>
-                </li>
+                
                 
             </ul>
         </div>

@@ -9,5 +9,8 @@ import Navbar from './layout/Navbar.vue';
     <Navbar />
 
     <Sidebar />
-
+    <div class="app-content content">
+        <h1>Todo</h1>
+        <p>Welcome to the Todo!</p>
+    </div>
 </template>

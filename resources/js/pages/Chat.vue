@@ -10,4 +10,9 @@ import Navbar from './layout/Navbar.vue';
 
     <Sidebar />
 
+    <div class="app-content content">
+        <h1>Chat</h1>
+        <p>Welcome to the Chat!</p>
+    </div>
+
 </template>

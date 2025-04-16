@@ -9,4 +9,8 @@ import Navbar from './layout/Navbar.vue';
 
     <Sidebar />
 
+    <div class="app-content content">
+        <h1>Eamil</h1>
+        <p>Welcome to the Eamil!</p>
+    </div>
 </template>
